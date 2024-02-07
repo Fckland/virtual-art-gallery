@@ -30,16 +30,16 @@ const artworks = [
 
 export default function Gallery() {
   return (
-    <div style={{ width: "80vw", height: "180vh", position: "relative" }}>
+    <div style={{ width: "80%", height: "280px", position: "relative" }}>
       <Carousel
-        dynamicHeight={false}
+        dynamicHeight={true}
         showThumbs={false}
-        style={{ height: "100%" }}
+        // style={{ height: "100%" }}
       >
         {artworks.map((artwork) => (
           <div
             key={artwork.id}
-            style={{ position: "relative", width: "100%", height: "100%" }}
+            style={{ position: "relative", width: "100%", height: "800%" }}
           >
             <ArtworkCard artwork={artwork} />
           </div>
